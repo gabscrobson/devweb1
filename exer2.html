@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    
+    <title>Lista2</title>
+
+    <!-- ------- CSS ------- -->
+    <style>
+    main {
+    height: 80vh;
+    width: 45vw;
+    margin: auto;
+    }
+
+    h3 {
+    background-color: #ce7f09;
+    margin: 0px;
+    }
+
+    h2 {
+    font-size: 0.9em;
+    font-weight: 1000;
+    margin: 8px 0px;
+    }
+
+    input {
+    margin-left: 25px;
+    }
+
+    select {
+    margin-left: 25px;
+    }
+
+    p {
+    display: inline-block;
+    width: 150px;
+    margin:5px;
+    }
+
+    form {
+    margin-top: 20px;
+    }
+
+    div {
+    display: inline-block;
+    }
+
+    #textarea {
+        height:95px;
+        width:315px;
+    }
+
+    #test {
+        width: 350px;
+        margin-left: 25px;
+        padding-top: 25px;
+    }
+
+    </style>
+
+</head>
+
+<body>
+
+    <main>
+
+        <!-- ------- CABEÇALHO ------- -->
+        <header>
+            <h3>SISTEMA DE GESTÃO ACADÊMICA</h3>
+            <h2>MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</h2>
+        </header>
+
+        <!-- ------- FORMULÁRIO ------- -->
+        <form method="get">
+
+            <!-- ------- LOGIN ------- -->
+            <p>Login</p>
+            <input type="text"><br>
+
+            <!-- ------- SENHA ------- -->
+            <p>Senha</p>
+            <input type="text"><br>
+
+            <!-- ------- STATUS ------- -->
+            <p>Status</p>
+            <select>
+            <option>Inativo</option>
+            <option>Ativo</option>
+            </select><br>
+
+            <!-- ------- TIPO ------- -->
+            <p>Tipo</p>
+            <div class="radio">
+                <input type="radio" id="tecnico">
+                <label for="tecnico">Técnico</label>
+
+                <input type="radio" id="professor">
+                <label for="professor">Professor</label>
+
+                <input type="radio" id="aluno">
+                <label for="aluno">Aluno</label>
+            </div><br>
+
+            <!-- ------- DATA CRIAÇÃO ------- -->
+            <p>Data criação</p>
+            <input type="text"><br>
+
+            <!-- ------- PERFIL ------- -->
+            <p>Perfil</p>
+            <div class="radio">
+                <input type="radio" id="convidado">
+                <label for="convidado">Convidado</label>
+
+                <input type="radio" id="adm">
+                <label for="adm">Administrador</label>
+            </div><br>
+
+            <!-- ------- OBSERVAÇÕES ------- -->
+            <p>Observações</p>
+            <input type="text" id="textarea" rows="2">
+
+            <!-- ------- Módulos ------- -->
+            <p>Módulos</p>
+            
+            <div id="test">
+                <input type="checkbox" id="compras" style="margin-bottom: 20px; margin-left: 0px;">
+                <label for="compras">Compras</label>
+    
+                <input type="checkbox" id="biblio">
+                <label for="biblio">Biblioteca</label>
+    
+                <input type="checkbox" id="acad">
+                <label for="acad">Acadêmico</label><br>
+    
+                <input type="checkbox" id="doc" style="margin-left: 0px;">
+                <label for="doc">Documentação</label>
+    
+                <input type="checkbox" id="rec" style="margin-bottom: 20px;">
+                <label for="rec">Recursos humanos</label>              
+            </div>
+            
+        </form>
+
+        </main>
+
+</body>
+
+</html>
