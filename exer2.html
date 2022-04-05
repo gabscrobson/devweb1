@@ -5,6 +5,7 @@
 <head>
     
     <title>Lista2</title>
+	<meta charset="UTF-8">
 
     <!-- ------- CSS ------- -->
     <style>
@@ -57,6 +58,10 @@
         margin-left: 25px;
         padding-top: 25px;
     }
+	
+	input[type=submit] {
+		margin-left: 5px;
+	}
 
     </style>
 
@@ -81,7 +86,7 @@
 
             <!-- ------- SENHA ------- -->
             <p>Senha</p>
-            <input type="text"><br>
+            <input type="password"><br>
 
             <!-- ------- STATUS ------- -->
             <p>Status</p>
@@ -93,27 +98,27 @@
             <!-- ------- TIPO ------- -->
             <p>Tipo</p>
             <div class="radio">
-                <input type="radio" id="tecnico">
+                <input type="radio" id="tecnico" name="radio1">
                 <label for="tecnico">Técnico</label>
 
-                <input type="radio" id="professor">
+                <input type="radio" id="professor" name="radio1">
                 <label for="professor">Professor</label>
 
-                <input type="radio" id="aluno">
+                <input type="radio" id="aluno" name="radio1">
                 <label for="aluno">Aluno</label>
             </div><br>
 
             <!-- ------- DATA CRIAÇÃO ------- -->
             <p>Data criação</p>
-            <input type="text"><br>
+            <input type="date"><br>
 
             <!-- ------- PERFIL ------- -->
             <p>Perfil</p>
             <div class="radio">
-                <input type="radio" id="convidado">
+                <input type="radio" id="convidado" name="radio2">
                 <label for="convidado">Convidado</label>
 
-                <input type="radio" id="adm">
+                <input type="radio" id="adm" name="radio2">
                 <label for="adm">Administrador</label>
             </div><br>
 
@@ -139,7 +144,12 @@
     
                 <input type="checkbox" id="rec" style="margin-bottom: 20px;">
                 <label for="rec">Recursos humanos</label>              
-            </div>
+            </div><br>
+			
+			<!-- ------- BOTÕES ------- -->
+			
+			<input type="submit" value="Cadastrar">
+			<input type="submit" value="Excluir">
             
         </form>
 
